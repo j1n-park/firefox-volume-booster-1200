@@ -1,0 +1,26 @@
+# Keep the repository limited to the extension's essential runtime files.
+# Ignore everything by default, then allow-list the files needed to run it.
+*
+
+# Allow Git to traverse directories.
+!*/
+
+# Project metadata and docs.
+!.gitignore
+!README.md
+
+# Firefox extension runtime files.
+!manifest.json
+!content.js
+!popup.html
+!popup.css
+!popup.js
+!icon-48.png
+!icon-96.png
+
+# Common local/generated files intentionally ignored by the default rule:
+# .DS_Store
+# .claude/
+# ENV/
+# *.zip
+# helper scripts and generated assets
